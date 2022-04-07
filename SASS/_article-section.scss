@@ -1,0 +1,151 @@
+
+.image{
+  width: 100%;
+  height: 200px;
+  background-image: url('../images/drawers.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -ms-border-radius: 10px 10px 0 0;
+  -o-border-radius: 10px 10px 0 0;
+}
+
+.article{
+  background-color: #fff;
+  border-radius: 0 0 10px 10px;
+  -webkit-border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+  -ms-border-radius: 0 0 10px 10px;
+  -o-border-radius: 0 0 10px 10px;
+}
+
+.text{
+
+    margin: 40px 30px;
+
+  h1{
+    color: $title-fcolor;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  p{
+    color: $text-fcolor;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+}
+
+.footer{
+  margin: 0 30px 20px 30px;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  place-items: center;
+}
+
+.autor{
+  display: flex;
+  align-items: center;
+  justify-self: left;
+}
+
+.avatar-img{
+  margin-right: 20px;
+
+  img{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+
+    width: 50px;
+  }
+}
+
+.autor-name{
+  color: $title-fcolor;
+  font-weight: 700;
+  font-size: .8rem;
+}
+
+.date{
+  color: $text-fcolor;
+  font-size: .8rem;
+}
+
+.share-btn{
+  justify-self: right;
+
+  img{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: $date-fcolor;
+  }
+
+  img:hover{
+    background-color: $text-fcolor;
+  }
+}
+
+.share-container{
+  display: none;
+  grid-template-columns: 80% 20%;
+  place-items: center;
+  margin: auto 0;
+
+  animation-name: showShare;
+  animation-duration: 1s;
+
+  padding: 20px 30px;
+  background-color: $title-fcolor;
+  border-radius: 0 0 10px 10px;
+  -webkit-border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+  -ms-border-radius: 0 0 10px 10px;
+  -o-border-radius: 0 0 10px 10px;
+}
+
+.share{
+  justify-self: left;
+  display: flex;
+  p{
+    color: $date-fcolor;
+    font-size: .9rem;
+    margin-right: 20px;
+    letter-spacing: 5px;
+  }
+}
+
+.share-btns{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  place-items: center;
+  column-gap: 15px;
+}
+
+.close-btn{
+  justify-self: right;
+  img{
+    width: 20px;
+    cursor: pointer;
+  }
+}
+
+@keyframes showShare {
+  from{
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
+}
